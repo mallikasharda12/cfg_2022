@@ -1,0 +1,29 @@
+body{
+margin-top: 15px;
+
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:30px;
+}
+#subheading{
+    font-size:medium;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p{
+    font-weight: 500;
+}
+#star{
+    margin-left: 35%;
+
+}
+#info{
+    margin-top: 2px;
+    color: #253;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+
+}
+#card1{
+    margin-top: 200px;
+}

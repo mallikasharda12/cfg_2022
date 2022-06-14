@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,300&family=Poppins&family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="hidit">
+    <video width="400" height="400" controls>
+        <source src="b.webm" type=video/mp4>
+      </video>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="startquiz">
+        <button id="start">Start Quiz</button>
+<div class="main_div hidden">
+        <div class="inner_div">
+              <h2 class="question">Question Comes Here</h2>
+              <ul>
+                 <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="ans1" id="option1">Answer Option </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans2" id="option2">Answer Option </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <label for="ans3" id="option3">Answer Option </label>
+                  </li>
+                </ul>
+                  <button id="submit">Submit</button>
+                  <div id="showScore" class="scoreArea">
+                </div>
+            </div>
+</div>
+</div>
+</body>
+    <script src="quiz.js"></script>
+</body>
+</html>
