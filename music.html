@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title">LOTUS LANE</h2>
+            <h3 id="artist">The Loyalist</h3>
+            <div class="img_container">
+                <img src="img/audio2.jpeg" alt="picture1"> 
+            </div>
+            <audio src="img/audio.mp3" ></audio>
+            <div class="music_controls">
+                <i class="fa-solid fa-angles-left" id="prev"></i>
+                <i class="fa-solid fa-play main_button" id="play"></i>
+                <i class="fa-solid fa-angles-right" id="next"></i>
+            </div>
+        </div>
+        <div class>
+            <button class="btn"><a href="quiz3.html">Take Quiz</a></button>
+        </div>
+    </div>
+    
+    <script>
+        const music= document.querySelector("audio");
+        const play= document.querySelector("#play");
+        const img= document.querySelector('img');
+        const title= document.querySelector("#title");
+        const artist= document.querySelector("#artist");
+        const prev= document.querySelector("#prev");
+        const next= document.querySelector("#next");
+        isPlaying= false;
+        songIndex=0;
+        const songs=[
+        {
+            title:"Lotus Lane",
+            artist:"Loyalist"       
+        },
+        {
+
+            title:"Lotus",
+            artist:"Loyal"       
+        },
+        {
+            title:"good days",
+            artist:"Naman"       
+        },{
+            title:"old time",
+            artist:"ananymous"
+        }
+        ];
+        const playMusic=()=>{
+            isPlaying=true;
+            music.play();
+            play.classList.replace('fa-play'  ,"fa-pause");
+            img.classList.add('anime');
+        };
+        const pauseMusic=()=>{
+            isPlaying=false;
+            music.pause();
+            play.classList.replace('fa-pause'  ,"fa-play");
+            img.classList.remove('anime');
+        };
+        
+        play.addEventListener('click',()=>{
+            if(isPlaying){
+                pauseMusic();
+            }else{
+                playMusic();
+            }
+        });
+        const loadSong=(songs)=>{
+     title.textContent= songs.title;
+     artist.textContent=songs.artist;
+     music.src="img/audio.mp3";   
+     img.src=`img/audio2.jpeg`;
+        }
+      const nextSong=()=>{
+        songIndex=(songIndex+1)%songs.length;
+        loadSong(songs[songIndex]);
+        playMusic();
+      }
+      const prevSong=()=>{
+        songIndex=(songIndex-1+songs.length)%songs.length;
+        loadSong(songs[songIndex]);
+        playMusic();
+      }
+        next.addEventListener('click',nextSong);
+        prev.addEventListener('click',prevSong);
+    </script>
+</body>
+</html>

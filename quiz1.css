@@ -1,0 +1,45 @@
+button{
+    margin-top: 12%;
+    margin-right: 3px;
+    }
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top:30px;
+    }
+    #subheading{
+        font-size:medium;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    p{
+        font-weight: 500;
+    }
+    .card{
+        border: 30px solid rgba(0,0,0,0.0);
+        width:700px
+    }
+    .hidden{
+        visibility: hidden;
+    }
+    #submit, .btn{
+        padding: 1rem 3rem;
+        outline: none;
+        font-size: 2rem;
+        font-weight: 400;
+        display: block;
+        margin:auto;
+        border: none;
+        margin-top: 4rem;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+        background-color: #74b9ff;
+        }
+        #start{
+            font-size: 3rem;
+            
+        }
+        .inner_div li{
+            font-size: 2rem;
+            margin-top: 1.5rem;
+            list-style: none;
+        }

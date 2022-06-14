@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="quiz1.css">
+   
+         <title>Document</title>
+</head>
+
+<body style="background-image: url('bg.jpeg'); background-repeat : no-repeat; background-size:cover;">
+    
+    <div class="d-flex justify-content-center" class="d-flex align-content-center" style="padding-top: 100px;">
+        <div class="card d-flex flex-column align-items-center">
+            <div id="hidit">
+            <video width="600" height="400" controls>
+                <source src="b.webm" type=video/mp4>
+              </video>
+              <p>SHAKTI: Stigma reduction, Health care provider Awareness and Knowledge enhancement on Transgender issues in India’ is an Indo-US collaborative study funded by NIH/ ICMR
+                (2012-2014). The project has three main aims:  To conduct formative research necessary to develop an innovative and culturally relevant intervention  To develop a provider-focused cognitive-behavioural stigma-reduction intervention, and obtain feedback from the community and experts and to pilot test and evaluate preliminary effect of the intervention
+               </p>
+            </div>
+              <div class="startquiz">
+                <button id="start" onclick="fun()">Start Quiz</button>
+                <script>
+                
+                    function fun() {
+                        document.getElementById("hidit").style.display = "none";  
+                        
+                        }
+                </script> 
+                <div class="main_div hidden" id="hidden">
+                    <div class="inner_div">
+                      <h2 class="question">Question Comes Here</h2>
+                      <ul>
+                         <li>
+                            <input type="radio" name="answer" id="ans1" class="answer">
+                            <label for="ans1" id="option1">Answer Option </label>
+                          </li>
+                          <li>
+                            <input type="radio" name="answer" id="ans2" class="answer">
+                            <label for="ans2" id="option2">Answer Option </label>
+                          </li>
+                          <li>
+                            <input type="radio" name="answer" id="ans3" class="answer">
+                            <label for="ans3" id="option3">Answer Option </label>
+                          </li>
+                        </ul>
+                          <button id="submit">Submit</button>
+                          <div id="showScore" class="scoreArea">
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <script>
+              document.getElementById("hidden").style.display = "none";
+              function fun() {
+                document.getElementById("hidit").style.display = "none";  
+                document.getElementById("hidden").style.display = "inline";
+                }
+            </script>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+<script src="quiz2.js"></script>
+</html>
